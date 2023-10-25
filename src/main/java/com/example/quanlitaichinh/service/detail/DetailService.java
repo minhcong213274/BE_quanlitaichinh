@@ -4,5 +4,5 @@ import com.example.quanlitaichinh.model.Detail;
 import com.example.quanlitaichinh.service.IGeneralService;
 
 public interface DetailService extends IGeneralService<Detail> {
-
+Detail createDetail(Detail detail);
 }

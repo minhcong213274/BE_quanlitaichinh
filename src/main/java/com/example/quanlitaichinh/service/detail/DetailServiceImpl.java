@@ -29,4 +29,9 @@ public class DetailServiceImpl implements DetailService {
     public void remove(Long id) {
         detailRepository.deleteById(id);
     }
+
+    @Override
+    public Detail createDetail(Detail detail) {
+        return detailRepository.save(detail);
+    }
 }
