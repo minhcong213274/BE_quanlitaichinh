@@ -6,5 +6,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 
 public interface UserService extends IGeneralService<User> {
     UserDetailsService userDetailsService();
+    User getCurrentUser();
+    User updateUser(User updatedUser);
+
 
 }

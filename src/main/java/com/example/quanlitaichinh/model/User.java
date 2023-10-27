@@ -30,6 +30,7 @@ public class User implements UserDetails {
     private String password;
     private String phoneNumber;
     private boolean isBlocked;
+    private int wallet;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

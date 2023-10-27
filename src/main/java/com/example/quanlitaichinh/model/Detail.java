@@ -22,7 +22,8 @@ public class Detail {
     private int expenditure;
     private int income;
     @JsonFormat(pattern = "dd/MM/yyyy", locale = "vi-VN", timezone = "Asia/Ho_Chi_Minh")
-    private Date createAt;    @ManyToOne
+    private Date createAt;
+    @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
 }
