@@ -8,5 +8,5 @@ import com.example.quanlitaichinh.dto.response.JwtAuthenticationResponse;
 public interface AuthenticationService {
     ApiResponse signup(SignUpRequest request);
 
-    JwtAuthenticationResponse signIn(SignInRequest request);
+    JwtAuthenticationResponse signin(SignInRequest request);
 }

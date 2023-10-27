@@ -75,7 +75,7 @@ public class JwtServiceImpl implements JwtService {
 
     @Override
     public JwtAuthenticationResponse responseJWT(User user) {
-        var jwt = generateToken((UserDetails) user);
+        var jwt = generateToken(user);
 
         var response = new JwtAuthenticationResponse();
         response.setToken(jwt);
