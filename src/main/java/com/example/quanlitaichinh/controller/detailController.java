@@ -27,4 +27,9 @@ public class detailController {
         if (isSuccessfullyCreated != null) return new ResponseEntity<>(isSuccessfullyCreated, HttpStatus.OK);
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
+    @PutMapping("/update")
+    public ResponseEntity<Detail> updateDetail(@RequestBody Detail detail){
+        detailService.save(detail);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 }

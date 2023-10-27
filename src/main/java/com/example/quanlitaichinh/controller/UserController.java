@@ -1,6 +1,5 @@
 package com.example.quanlitaichinh.controller;
 
-import com.example.quanlitaichinh.model.Detail;
 import com.example.quanlitaichinh.model.User;
 import com.example.quanlitaichinh.service.user.UserService;
 import lombok.RequiredArgsConstructor;
@@ -29,4 +28,7 @@ public class UserController {
         if (isSuccessfullyCreated != null) return new ResponseEntity<>(isSuccessfullyCreated, HttpStatus.OK);
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
+//    @PutMapping("/changePassword")
+//    public ResponseEntity<User> changePassword(@RequestBody ChangePasswordRequest request){
+//    }
 }
